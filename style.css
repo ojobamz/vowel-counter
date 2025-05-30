@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #7f8ff4;
+}
+
+button {
+    background-color: #7f8ff4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #6677cc;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.results {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.result-box {
+    margin-bottom: 20px;
+}
+
+.result-box h3 {
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+#totalVowels {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #7f8ff4;
+}
+
+.result-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vowel-count {
+    padding: 10px;
+    min-width: 60px;
+}
+
+.vowel-count span:first-child {
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-right: 5px;
+}
+
+.vowel-count span:last-child {
+    font-weight: bold;
+    color: #7f8ff4;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .result-details {
+        flex-direction: column;
+    }
+    
+    .vowel-count {
+        margin: 5px 0;
+    }
+}
